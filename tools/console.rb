@@ -2,7 +2,24 @@
 # We've done it for you here.
 require_relative '../config/environment.rb'
 
-# test code goes here
+
+blink = Gym.new("Blink")
+equinox = Gym.new("Equinox")
+crunch = Gym.new("Crunch")
+
+
+mallory = Lifter.new("Mallory", 500)
+sylwia = Lifter.new("Sylwia", 100)
+matt = Lifter.new("Matt", 600)
+pete = Lifter.new("Pete", 1000)
+
+
+membership_mallory = Membership.new(500, mallory, blink)
+membership2_mallory = Membership.new(500, mallory, equinox)
+membership3_mallory = Membership.new(100, mallory, crunch)
+membership_pete = Membership.new(300, pete, equinox)
+membership_matt = Membership.new(400, matt, equinox)
+membership_sylwia = Membership.new(100, sylwia, blink)
 
 binding.pry
 
